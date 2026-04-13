@@ -4,11 +4,11 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager>
 {
-    const string MAINSCENE = "Main";
+    const string TYCOON_SCENE = "Tycoon";
 
     public void GoToMainScene()
     {
-        ChangeScene(MAINSCENE);
+        ChangeScene(TYCOON_SCENE);
     }
 
 

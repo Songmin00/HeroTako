@@ -1,15 +1,12 @@
 ﻿using UnityEngine;
 
-/// <summary>
-/// 성능 최적화 및 에디터 예외 처리가 반영된 실무용 제네릭 싱글톤
-/// </summary>
 public abstract class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 {
     private static T _instance;
     private static readonly object _lock = new object();
     private static bool _isQuitting = false;
 
-    [Header("Singleton Options")]
+    [Header("싱글톤 옵션")]
     [SerializeField] private bool _dontDestroyOnLoad = true;
 
     public static T Instance
